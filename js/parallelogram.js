@@ -17,9 +17,9 @@ document.getElementById('parallelogram-btn').addEventListener('click', function(
     const calculator = document.getElementById('calculator');
     const tr = document.createElement('tr');
     const td= document.createElement('button');
-    td.innerText ='parallelogram ';
-    td.style.backgroundColor ='blue'
-    td.style.padding ='8px 30px'
+    td.innerText ='Convert to m';
+    td.style.backgroundColor ='rgb(0, 128, 255)'
+    td.style.padding ='7px 12px'
     td.style.borderRadius ='10px'
     td.style.color = 'white'
     tr.innerHTML =`
