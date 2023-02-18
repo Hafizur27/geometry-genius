@@ -20,8 +20,9 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
      const title = document.getElementById('triangle-title').innerText;
 
     //  6. call display data function
-    
+
      data(title,area);
+     
 
  
  
