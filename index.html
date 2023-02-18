@@ -57,7 +57,7 @@
                     </div>
                   </div>
                   <!-- rectangle card ends here -->
-                  <!-- parallelogram -->
+                  <!-- parallelogram card starts here-->
                 <div class="card card-compact w-full bg-base-100 shadow-xl">
                     <figure>
                       <img class="w-full h-40" src="./images/parallelogram.png" alt="Shoes" class="rounded-xl" />
@@ -70,45 +70,49 @@
                       </div>
                     </div>
                   </div>
-                  <!-- 4th card -->
+                  <!-- parallelogram card ends here -->
+                  <!-- rhombus card starts here -->
                 <div class="card card-compact w-full bg-base-100 shadow-xl">
                     <figure>
                       <img class="w-full h-40" src="./images/rhombus.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title">Rhombus</h2>
-                      <p> d<sub>1</sub>=<span>16</span>cm, d<sub>2</sub>= <span>8</span>cm </p>
+                      <h2 id="rhombus-title" class="card-title">Rhombus</h2>
+                      <p> d<sub>1</sub>=<span id="rhombus-diagonals-first">16</span>cm, d<sub>2</sub>= <span id="rhombus-diagonals-second">8</span>cm </p>
                       <div class="card-actions">
-                        <button class="btn rounded-lg text-white px-4 py-2 bg-sky-600  ">Calculate</button>
+                        <button id="rhombus-btn"  class="btn rounded-lg text-white px-4 py-2 bg-sky-600  ">Calculate</button>
                       </div>
                     </div>
                   </div>
-                  <!-- 5th card -->
+                  <!-- rhombus card ends here -->
+                  <!-- pentagon card starts here -->
                 <div class="card card-compact w-full bg-base-100 shadow-xl">
                     <figure>
                       <img class="w-full h-40" src="./images/pentagon.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title">Pentagon</h2>
-                      <p> p=<span>10</span>cm, b= <span>12</span>cm </p>
+                      <h2 id="pentagon-title" class="card-title">Pentagon</h2>
+                      <p> p=<span id="pentagon-perimeter">10</span>cm, b= <span id="pentagon-base">12</span>cm </p>
                       <div class="card-actions">
-                        <button class="btn rounded-lg text-white px-4 py-2 bg-sky-600 ">Calculate</button>
+                        <button id="pentagon-btn" class="btn rounded-lg text-white px-4 py-2 bg-sky-600 ">Calculate</button>
                       </div>
                     </div>
                   </div>
-                  <!-- 6th card -->
+                  <!-- pentagon card ends here  -->
+                  <!-- ellipse card starts here -->
                 <div class="card card-compact w-full bg-base-100 shadow-xl">
                     <figure>
                       <img class="w-full h-40" src="./images/ellipse.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title">Ellipse</h2>
-                      <p> a=<span>10</span>cm, b= <span>4</span>cm </p>
+                      <h2 id="ellipse-title" class="card-title">Ellipse</h2>
+                      <p> a=<span id="ellipse-major">10</span>cm, b= <span id="ellipse-minor">4</span>cm </p>
                       <div class="card-actions">
-                        <button class="btn rounded-lg text-white px-4 py-2 bg-sky-600 ">Calculate</button>
+                        <button id="ellipse-btn" class="btn rounded-lg text-white px-4 py-2 bg-sky-600 ">Calculate</button>
                       </div>
                     </div>
                   </div>
+                  <!-- ellipse card ends here -->
             </div>
             <!-- cal -->
             <div class="cart-details w-full md:w-[40%] lg:w-[40%] mx-auto">
@@ -142,5 +146,8 @@
     <script src="./js/tringle.js"></script>
     <script src="./js/rectangle.js"></script>
     <script src="./js/parallelogram.js"></script>
+    <script src="./js/rhombus.js"></script>
+    <script src="./js/pentagon.js"></script>
+    <script src="./js/ellipse.js"></script>
 </body>
 </html>

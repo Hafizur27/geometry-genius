@@ -1,10 +1,4 @@
-// function textElementValue(elementId){
-//     const elementValue = document.getElementById(elementId);
-//     const elementValueString = elementValue.innerText;
-//     const element = parseFloat(elementValueString);
-//     return element;
-    
-// }
+
 function textElement(elementId){
     const elementValue = document.getElementById(elementId);
     const elementStringValue = elementValue.innerText;
