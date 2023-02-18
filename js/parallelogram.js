@@ -1,34 +1,27 @@
+    // 1. event listener add in parallelogram calculate button
 
-function textElement(elementId){
-    const elementValue = document.getElementById(elementId);
-    const elementStringValue = elementValue.innerText;
-    const element = parseInt(elementStringValue);
-    return element;
-}
 document.getElementById('parallelogram-btn').addEventListener('click', function(){
+
+    // 2. increase the global variable value
+
     count = count + 1;
 
-    const parallelogramBase = textElement('parallelogram-base')
-    const parallelogramHeight = textElement('parallelogram-height')
+    // 3. call the textElement function and get the element value of the function 
 
-    const parallelogramArea = parallelogramBase * parallelogramHeight;
+    const parallelogramBase = textElement('parallelogram-base');
+    const parallelogramHeight = textElement('parallelogram-height');
 
-    const parallelogramTitle = document.getElementById('parallelogram-title').innerText;
-    const calculator = document.getElementById('calculator');
-    const tr = document.createElement('tr');
-    const td= document.createElement('button');
-    td.innerText ='Convert to m';
-    td.style.backgroundColor ='rgb(0, 128, 255)'
-    td.style.padding ='7px 12px'
-    td.style.borderRadius ='10px'
-    td.style.color = 'white'
-    tr.innerHTML =`
-    <td>${count}</td>
-    <td>${parallelogramTitle}</td>
-    <td>${parallelogramArea}</td>
-    
-    `;
-    calculator.appendChild(tr).appendChild(td);
+    // 4. calculate parallelogram area
+
+    const area = parallelogramBase * parallelogramHeight;
+
+    // 5. get our parallelogram element text
+
+    const title = document.getElementById('parallelogram-title').innerText;
+
+    //  6. call display data function
+
+    data(title,area);
 
    
 })

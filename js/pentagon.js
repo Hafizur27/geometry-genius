@@ -1,27 +1,27 @@
+// 1. event listener add in pentagon calculate button
+
 document.getElementById('pentagon-btn').addEventListener('click', function(){
+
+    // 2. increase the global variable value
+
     count = count + 1;
+
+    // 3. call the textElement function and get the element value of the function 
     
-    const pentagonPerimeter = textElement('pentagon-perimeter')
-    const pentagonBase = textElement('pentagon-base')
+    const pentagonPerimeter = textElement('pentagon-perimeter');
+    const pentagonBase = textElement('pentagon-base');
+
+    // 4. calculate pentagon area
     
-    const pentagonArea = 0.5 * pentagonPerimeter * pentagonBase;
+    const area = 0.5 * pentagonPerimeter * pentagonBase;
+
+    // 5. get our pentagon element text
    
-    const pentagonTitle = document.getElementById('pentagon-title').innerText;
-    const calculator = document.getElementById('calculator');
-    const tr = document.createElement('tr');
-    const td= document.createElement('button');
-    td.innerText ='Convert to m';
-    td.style.backgroundColor ='rgb(0, 128, 255)'
-    td.style.padding ='7px 12px'
-    td.style.borderRadius ='10px'
-    td.style.color = 'white'
-    tr.innerHTML =`
-    <td>${count}</td>
-    <td>${pentagonTitle}</td>
-    <td>${pentagonArea}</td>
-    
-    `;
-    calculator.appendChild(tr).appendChild(td);
+    const title = document.getElementById('pentagon-title').innerText;
+
+    //  6. call display data function
+
+    data(title,area);
 
    
 })

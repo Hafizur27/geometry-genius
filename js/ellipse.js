@@ -1,29 +1,28 @@
+// 1. event listener add in ellipse calculate button
+
 document.getElementById('ellipse-btn').addEventListener('click', function(){
+
+    // 2. increase the global variable value
+
     count = count + 1;
-    
-    const ellipseMajorA = textElement('ellipse-major')
-    const ellipseMinorB = textElement('ellipse-minor')
+
+    // 3. call the textElement function and get the element value of the function 
+
+    const ellipseMajorA = textElement('ellipse-major');
+    const ellipseMinorB = textElement('ellipse-minor');
+
+    // 4. calculate ellipse area
     
     const ellipseArea = 3.14 * ellipseMajorA * ellipseMinorB;
     const  area = parseFloat(ellipseArea.toFixed(2));
-    
+
+    // 5. get our ellipse element text
    
-    const ellipseTitle = document.getElementById('ellipse-title').innerText;
-    const calculator = document.getElementById('calculator');
-    const tr = document.createElement('tr');
-    const td= document.createElement('button');
-    td.innerText ='Convert to m';
-    td.style.backgroundColor ='rgb(0, 128, 255)'
-    td.style.padding ='7px 12px'
-    td.style.borderRadius ='10px'
-    td.style.color = 'white'
-    tr.innerHTML =`
-    <td>${count}</td>
-    <td>${ellipseTitle}</td>
-    <td>${area}</td>
-    
-    `;
-    calculator.appendChild(tr).appendChild(td);
+    const title = document.getElementById('ellipse-title').innerText;
+
+    //  6. call display data function
+
+    data(title,area);
 
    
 })

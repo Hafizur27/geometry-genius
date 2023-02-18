@@ -1,26 +1,26 @@
+// 1. event listener add in rectangle calculate button
+
 document.getElementById('rectangle-btn').addEventListener('click', function(){
+
+    // 2. increase the global variable value
+
     count = count + 1;
+
+    // 3. call the inputFiledValue function and get the return input value of the function 
 
     const widthRectangle = inputFiledValue('rectangle-width');
     const lengthRectangle = inputFiledValue('rectangle length');
 
-    const areaRectangle = widthRectangle * lengthRectangle;
+    // 4. calculate rectangle area
 
-    const titleRectangle = document.getElementById('rectangle-title').innerText;
-    const calculator = document.getElementById('calculator');
-    const tr = document.createElement('tr');
-    const td= document.createElement('button');
-    td.innerText ='Convert to m';
-    td.style.backgroundColor ='rgb(0, 128, 255)'
-    td.style.padding ='7px 12px'
-    td.style.borderRadius ='10px'
-    td.style.color = 'white'
-    tr.innerHTML =`
-    <td>${count}</td>
-    <td>${titleRectangle }</td>
-    <td>${areaRectangle}</td>
-    
-    `;
-    calculator.appendChild(tr).appendChild(td);
+    const area = widthRectangle * lengthRectangle;
+
+    // 5. get our rectangle element text
+
+    const title = document.getElementById('rectangle-title').innerText;
+
+    //  6. call display data function
+
+    data(title,area);
 
 })
